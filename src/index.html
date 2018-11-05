@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pl">
+
+<head>
+  <title>Macierze ES6+</title>
+  <meta name="description" content="Wykonywanie dzialan na macierzach"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Gabor Danielski">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="choice">
+        <h3 class="question">
+          Którą operację na macierzach chcesz wykonac?
+        </h3>
+      <div class="menu">
+        <button class="menu_button 1">Dodawanie macierzy</button>
+        <button class="menu_button 2">Odejmowanie macierzy</button>
+        <button class="menu_button 3">Mnożenie macierzy przez skalar</button>
+        <button class="menu_button 4">Mnożenie dwóch macierzy</button>
+        <button class="menu_button 5">Transpozycja macierzy</button>
+        <button class="menu_button 6">Liczenie wyznacznika macierzy kwadratowej</button>
+        <button class="menu_button 7">Rozwiązywanie równania Cramerowskiego</button>
+        <button class="menu_button 8">Określenie liczby rozwiązań układu nie Cramerowskiego (rzędy)</button>
+      </div>
+      <p class="copywrite">Copyright &copy 2018 Gabor Danielski</p>
+    </div>
+    <div class="twoDimensions">
+      <form id="f1">
+        <div>
+          <p class="twoDimensions-p">Wprowadz wymiary pierwszej macierzy</p>
+          <p class="twoDimensions-p">(m-liczba wierszy, n-liczba kolumn)</p>
+        </div>
+        <span>M :</span><input type="number" class="row" min="1" max="9" value='1'>
+        <span>N :</span><input type="number" class="column" min="1" max="9" value='1'>
+        <div>
+          <p class="twoDimensions-p">Wprowadz wymiary drugiej macierzy</p>
+          <p class="twoDimensions-p">(m2-liczba wierszy, n2-liczba kolumn)</p>
+        </div>
+        <span>M2 :</span><input type="number" class="row2" min="1" max="9" value='1'>
+        <span>N2 :</span><input type="number" class="column2" min="1" max="9" value='1'>
+      </form>
+      <button class="button_entering_dimensions_2m">Wprowadz</button>
+      <img src="assets/images/rownanie_example.png" class="rownanie_example" alt="">
+      <img src="assets/images/rownanie_example2.png" class="rownanie_example2" alt="">
+    </div>
+    <div class="oneDimension">
+      <form id="f2">
+        <div>
+          <p>Wprowadz wymiary macierzy</p>
+          <p>(m-liczba wierszy, n-liczba kolumn)</p>
+        </div>
+        <span>M :</span><input type="number" class="row3" min="1" max="9" value='1'>
+        <span>N :</span><input type="number" class="column3" min="1" max="9" value='1'>
+      </form>
+      <button class="button_entering_dimensions_1m">Wprowadz</button>
+    </div>
+    <div class="newMatrix">
+      <p class="p_enter_values">Wprowadz wartości macierzy</p>
+      <div class="matrix">
+        <!--<input type="number">-->
+      </div>
+      <button class="button_entering_2m">Wprowadz wartosci macierzy</button>
+    </div>
+    <div class="matrixOutputContainer">
+      <p>Macierz wynikowa :</p>
+      <div class="matrixOutput"></div>
+    </div>
+    <div class="numberOutputContainer">
+      <p>Wynik działania :</p>
+      <div class="numberOutput"></div>
+    </div>
+  </div>
+
+  <script src="/js/macierze.js"></script>
+</body>
+
+</html>
