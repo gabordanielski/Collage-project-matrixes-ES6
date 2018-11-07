@@ -302,7 +302,8 @@ template {
   font-family: "Lato", sans-serif; }
 
 .choice {
-  height: 100vh;
+  min-height: 90vh;
+  padding-bottom: 30px;
   text-align: center; }
   .choice h3 {
     padding: 40px;
@@ -318,6 +319,9 @@ template {
     bottom: 20px;
     right: 50%;
     transform: translateX(50%); }
+
+footer p {
+  text-align: center; }
 
 .twoDimensions, .oneDimension {
   display: none;
@@ -338,9 +342,7 @@ template {
     height: 42px; }
   .twoDimensions button, .oneDimension button {
     display: block;
-    margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: 45px;
+    margin: 60px auto 45px auto;
     padding: 14px;
     width: 120px; }
   .twoDimensions img, .oneDimension img {

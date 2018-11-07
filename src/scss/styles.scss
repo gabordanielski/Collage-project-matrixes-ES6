@@ -6,7 +6,8 @@
 }
 
 .choice{
-  height: 100vh;
+  min-height: 90vh;
+  padding-bottom: 30px;
   text-align: center;
   h3{
     padding: 40px;
@@ -27,7 +28,11 @@
   }
 }
 
-
+footer{
+  p{
+    text-align: center;
+  }
+}
 
 .twoDimensions, .oneDimension{
   display: none;
@@ -54,9 +59,7 @@
   }
   button{
     display: block;
-    margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: 45px;
+    margin: 60px auto 45px auto;
     padding: 14px;
     width: 120px;
   }
