@@ -7,6 +7,7 @@ class Macierze{
   cacheDom(){
     // CHOICE DIV DOM CACHE
     this.$choice = document.getElementsByClassName("choice")[0];
+    this.$footer = document.getElementsByClassName("footer")[0];
     this.$menu_btn1 = document.getElementsByClassName("1")[0];
     this.$menu_btn2 = document.getElementsByClassName("2")[0];
     this.$menu_btn3 = document.getElementsByClassName("3")[0];
@@ -57,6 +58,7 @@ class Macierze{
   // ANIMATIONS
   menuFadeOut(){
     this.$choice.style.display="none";
+    this.$footer.style.display="none";
   }
   menuFadeIn(){
     // FOR MENU BUTTON
@@ -290,7 +292,7 @@ class Macierze{
       this.$button_entering_2m.parentNode.insertBefore(input, this.$button_entering_2m);
       this.newMatrixFadeIn();
       this.enteringOneMatrix();
-      
+
       this.$button_entering_2m.onclick = ()=>{
         this.enteringTwoMatrixesValues(()=>{
           let input_scalar = document.getElementsByClassName("input_scalar")[0];

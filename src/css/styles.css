@@ -313,7 +313,10 @@ template {
     display: block;
     margin: 6px auto;
     padding: 16px;
-    width: 340px; }
+    width: 350px; }
+    @media (max-width: 345px) {
+      .choice button {
+        width: 310px; } }
   .choice p {
     position: absolute;
     bottom: 20px;
@@ -346,10 +349,15 @@ footer p {
     padding: 14px;
     width: 120px; }
   .twoDimensions img, .oneDimension img {
+    width: 280px;
     display: none;
     border: 1px solid black;
     margin: 0 auto;
-    padding: 30px; }
+    padding: 10px; }
+    @media (min-width: 576px) {
+      .twoDimensions img, .oneDimension img {
+        width: 450px;
+        padding: 20px; } }
 
 .newMatrix {
   display: none;

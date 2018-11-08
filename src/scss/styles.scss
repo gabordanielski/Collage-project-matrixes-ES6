@@ -18,7 +18,10 @@
     display: block;
     margin: 6px auto;
     padding: 16px;
-    width: 340px;
+    width: 350px;
+    @media (max-width: 345px) {
+      width: 310px;
+    }
   }
   p{
     position: absolute;
@@ -64,10 +67,15 @@ footer{
     width: 120px;
   }
   img{
+    width: 280px;
     display: none;
     border: 1px solid black;
     margin: 0 auto;
-    padding: 30px;
+    padding: 10px;
+    @media (min-width: 576px) {
+      width: 450px;
+      padding: 20px;
+    }
   }
 }
 
